@@ -1,0 +1,31 @@
+[tool.pytest.ini_options]
+testpaths = [
+    "tests/test_login.py",
+    "tests/test_my_work.py",
+    "tests/test_profile.py",
+    "tests/test_view_all_work.py",
+    "tests/test_global_search.py",
+    "tests/test_basic_advance_search.py",
+    "tests/test_scheduler.py",
+    "tests/test_job_status.py",
+    "tests/JobDetails/test_base_jobpage.py",
+    "tests/JobDetails/CustSiteTab/test_cust_info.py",
+    "tests/JobDetails/CustSiteTab/test_seller_info.py",
+    "tests/JobDetails/CustSiteTab/test_site_info.py",
+    "tests/JobDetails/JobSchedTab/test_job_info.py",
+    "tests/JobDetails/ActionDocsTab/test_attachments.py",
+    "tests/JobDetails/ActionDocsTab/test_notes_and_email.py",
+    "tests/JobDetails/ActionDocsTab/test_q_and_a.py",
+    "tests/JobDetails/ActionDocsTab/test_activities.py",
+]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+markers = [
+    "smoke: quick validation tests",
+    "regression: full regression suite",
+    "hybrid: tests involving webview context",
+]
+addopts = "-v --tb=short --timeout=120 --html=reports/report.html --self-contained-html"
+log_cli = true
+log_cli_level = "INFO"

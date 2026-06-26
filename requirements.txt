@@ -1,0 +1,7 @@
+Appium-Python-Client>=4.0.0
+pytest>=8.0.0
+pytest-html>=4.1.1
+pytest-metadata>=3.0.0
+python-dotenv>=1.0.0
+pytest-timeout>=2.3.1
+pyyaml>=6.0.1

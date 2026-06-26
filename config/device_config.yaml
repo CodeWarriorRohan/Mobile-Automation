@@ -1,0 +1,21 @@
+emulator:
+  platformName: android
+  automationName: uiautomator2
+  deviceName: Android Emulator
+  avd: Medium_Phone
+  platformVersion: "16"
+  package: io.cilio.cio.mobile
+  appActivity: io.cilio.cio.mobile.MainActivity
+  autoGrantPermissions: true
+  noReset: true
+  newCommandTimeout: 300
+
+# real_device:
+#   platformName: android
+#   automationName: uiautomator2
+#   deviceName: My Phone
+#   udid: XXXXXXXXXXXXXXXX           # from `adb devices`
+#   platformVersion: "15"
+#   autoGrantPermissions: true
+#   noReset: false
+#   newCommandTimeout: 300

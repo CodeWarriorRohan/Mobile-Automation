@@ -1,0 +1,23 @@
+# Environment secrets — never commit
+.env
+
+# APK files
+apps/*.apk
+
+# Generated reports
+reports/report.html
+reports/assets/
+
+# Pytest cache
+.pytest_cache/
+__pycache__/
+*.pyc
+*.pyo
+
+# Screenshots
+Screenshots/
+*.log
+
+# Virtual environments
+venv/
+venv1/
